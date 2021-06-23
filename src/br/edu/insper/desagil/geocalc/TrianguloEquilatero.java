@@ -7,17 +7,11 @@ public class TrianguloEquilatero extends Triangulo {
 		this.lado = lado;
 	}
 
-	@Override
 	public double perimetro() {
-		return 3 * this.lado;
+		return super.perimetro();
 	}
 
-	@Override
 	public double area() {
-		double meio = this.lado / 2.0;
-
-		double altura = Math.sqrt(this.lado * this.lado - meio * meio);
-
-		return this.lado * altura / 2;
+		return super.area();
 	}
 }

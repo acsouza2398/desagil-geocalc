@@ -7,17 +7,12 @@ public class HexagonoRegular extends Poligono {
 		this.lado = lado;
 	}
 
-	@Override
 	public double perimetro() {
-		return 6 * this.lado;
+		return 2 * super.perimetro();
 	}
 
-	@Override
 	public double area() {
-		double meio = this.lado / 2.0;
-
-		double altura = Math.sqrt(this.lado * this.lado - meio * meio);
-
-		return 6 * this.lado * altura / 2;
+		return 6 * super.area();
 	}
+
 }

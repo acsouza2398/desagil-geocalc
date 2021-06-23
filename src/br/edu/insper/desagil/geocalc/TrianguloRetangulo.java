@@ -9,13 +9,11 @@ public class TrianguloRetangulo extends Triangulo {
 		this.cateto2 = cateto2;
 	}
 
-	@Override
 	public double perimetro() {
 		double hipotenusa = Math.sqrt(this.cateto1 * this.cateto1 + this.cateto2 * this.cateto2);
 		return hipotenusa + this.cateto1 + this.cateto2;
 	}
 
-	@Override
 	public double area() {
 		return this.cateto1 * this.cateto2 / 2;
 	}
